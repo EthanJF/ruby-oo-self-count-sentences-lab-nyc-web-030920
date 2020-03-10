@@ -22,8 +22,8 @@ class String
     counter = 0
     words = self.split(" ")
     
-    words.each do |character|
-      if character == "."
+    words.each do |word|
+      if word.includes?(".") || word.includes?("?") || word.includes?("!")
         counter += 1
       end
     end
