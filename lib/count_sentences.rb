@@ -20,8 +20,9 @@ class String
 
   def count_sentences
     counter = 0
+    words = self.split(" ")
     
-    self.each do |character|
+    words.each do |character|
       if character == "."
         counter += 1
       end
