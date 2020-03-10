@@ -19,6 +19,13 @@ class String
   end
 
   def count_sentences
-    counter 
+    counter = 0
+    
+    self.each do |character|
+      if character == "."
+        counter += 1
+      end
+    end
+    counter
   end
 end
