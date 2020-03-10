@@ -23,7 +23,7 @@ class String
     words = self.split(" ")
     
     words.each do |word|
-      if word.includes?(".") || word.includes?("?") || word.includes?("!")
+      if word.include?(".") || word.include?("?") || word.include?("!")
         counter += 1
       end
     end
